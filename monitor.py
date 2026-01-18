@@ -1,8 +1,8 @@
 import requests, hashlib, os
 
 URL = "https://dvprogram.state.gov/"
-BOT_TOKEN = os.environ["7766675410:AAE-lYf9QE1nh-wEOCPfkP68kT3iUFYNJys"]
-CHAT_ID = os.environ["484284070"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 def send(text):
     requests.post(
