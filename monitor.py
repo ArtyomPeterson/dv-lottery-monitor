@@ -27,7 +27,7 @@ def get_latest_news(html: str):
     if not match:
         return None
 
-    date, link, title = match
+    date, link, title = match.groups()
     return f"{date} | {title.strip()}"
 
 html = requests.get(NEWS_URL, timeout=20).text
