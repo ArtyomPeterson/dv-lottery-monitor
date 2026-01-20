@@ -21,7 +21,7 @@ jobs:
       - run: |
           git config user.name "bot"
           git config user.email "bot@github.com"
-          git add hash.txt || true
+          git add page_old.txt || true
           git commit -m "update hash" || true
           git push || true
         env:
